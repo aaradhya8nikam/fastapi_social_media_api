@@ -22,7 +22,7 @@ def get_db():
 while True:
 #it  may happen that sometimes the connection with databases might fail and so we are creating this try statement
     try:
-        conn=psycopg2.connect(host='localhost', database='fastapi', user='postgres', password='Aaradhyanikam@iitbhu123',cursor_factory=RealDictCursor)
+        conn=psycopg2.connect(host='localhost', database='fastapi', user='postgre', password='password',cursor_factory=RealDictCursor)
         cursor=conn.cursor()
         print("Database connection was successful")
         break
